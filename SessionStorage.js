@@ -26,7 +26,7 @@ function guardar_nota(){
         SessionStorage.setItem("nota", nota)
         contador = 1
     }else{
-        contador =localStorage.getItem("contadorNota")
+        contador =SessionStorage.getItem("contadorNota")
         conatdor = parseInt(contador)+1
         SessionStorage.setItem("contadorNota", contador)
         SessionStorage.setItem("nota"+ contador, nota)
